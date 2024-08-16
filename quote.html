@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Request - Briljante Books</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="logo.png" alt="Briljante Books Logo" class="logo" />
+        <div class="nav-links">
+          <a href="index.html#home">Alles oor Ons | About Us</a>
+          <a href="index.html#textbooks">Handboeke | Textbooks</a>
+          <a href="index.html#contact">Kontak Ons | Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="quote-request">
+        <h1>Quote Request</h1>
+        <div id="selected-book-info"></div>
+        <form id="quoteForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input
+            type="text"
+            name="surname"
+            placeholder="Your Surname"
+            required
+          />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="hidden" name="book" id="bookInput" />
+          <button type="submit">Submit Quote Request</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Briljante Books. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

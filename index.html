@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Briljante Books</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="logo.png" alt="Briljante Books Logo" class="logo" />
+        <div class="nav-links">
+          <a href="#home">Alles oor Ons | About Us</a>
+          <a href="#textbooks">Handboeke | Textbooks</a>
+          <a href="#contact">Kontak Ons | Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <img src="/images/books1.jpg" alt="Slide 1" />
+            <div class="slide-content">
+              <h2>Interactive Textbooks</h2>
+              <p>Discover our wide variety of FAL interactive textbooks</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="/images/books2.jpg" alt="Slide 2" />
+            <div class="slide-content">
+              <h2>Engaging Resources</h2>
+              <p>Explore our comprehensive learning materials</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="/images/books3.jpg" alt="Slide 3" />
+            <div class="slide-content">
+              <h2>Innovative Learning</h2>
+              <p>Experience the future of education with Briljante Books</p>
+            </div>
+          </div>
+        </div>
+        <button class="slider-arrow prev">&lt;</button>
+        <button class="slider-arrow next">&gt;</button>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>Alles oor Ons | About Us</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="/images/books1.jpg" alt="About Briljante Books" />
+          </div>
+          <div class="about-text">
+            <p>
+              At Briljante Books, we are dedicated to providing high-quality,
+              interactive textbooks and comprehensive learning materials for FAL
+              (First Additional Language) education.
+            </p>
+            <p>
+              Our mission is to make learning engaging, innovative, and
+              accessible to students across various grade levels.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="textbooks">
+        <h2>Handboeke | Textbooks</h2>
+        <div class="book-slider">
+          <button class="book-arrow prev">&lt;</button>
+          <div class="book-container">
+            <div class="book">
+              <img src="grade3.jpg" alt="Grade 3 Book" />
+              <h3>Grade 3</h3>
+              <div class="preview-buttons">
+                <button class="preview">Preview</button>
+                <button class="preview">Index</button>
+              </div>
+              <button class="add-to-quote" data-book="Grade 3">
+                Add to Quote
+              </button>
+            </div>
+            <div class="book">
+              <img src="grade4.jpg" alt="Grade 4 Book" />
+              <h3>Grade 4</h3>
+              <div class="preview-buttons">
+                <button class="preview">Preview</button>
+                <button class="preview">Index</button>
+              </div>
+              <button class="add-to-quote" data-book="Grade 4">
+                Add to Quote
+              </button>
+            </div>
+            <div class="book">
+              <img src="grade5.jpg" alt="Grade 5 Book" />
+              <h3>Grade 5</h3>
+              <div class="preview-buttons">
+                <button class="preview">Preview</button>
+                <button class="preview">Index</button>
+              </div>
+              <button class="add-to-quote" data-book="Grade 5">
+                Add to Quote
+              </button>
+            </div>
+            <div class="book">
+              <img src="grade6.jpg" alt="Grade 6 Book" />
+              <h3>Grade 6</h3>
+              <div class="preview-buttons">
+                <button class="preview">Preview</button>
+                <button class="preview">Index</button>
+              </div>
+              <button class="add-to-quote" data-book="Grade 6">
+                Add to Quote
+              </button>
+            </div>
+            <div class="book">
+              <img src="grade7.jpg" alt="Grade 7 Book" />
+              <h3>Grade 7</h3>
+              <div class="preview-buttons">
+                <button class="preview">Preview</button>
+                <button class="preview">Index</button>
+              </div>
+              <button class="add-to-quote" data-book="Grade 7">
+                Add to Quote
+              </button>
+            </div>
+          </div>
+          <button class="book-arrow next">&gt;</button>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Kontak Ons | Contact Us</h2>
+        <p>brillianteboeke@gmail.com</p>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Briljante Books. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
